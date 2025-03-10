@@ -1,0 +1,13 @@
+#Input  (POST request)
+##body
+{
+    "username": "john",
+    "password": "1234"
+}
+
+
+#Output
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU5MDU3MCwiaWF0IjoxNzQxNTA0MTcwLCJqdGkiOiI1YTRkYzQ5MzkxYmI0ZWU5OTVkZDQ3MWU3ZjNkYzEzYiIsInVzZXJfaWQiOjN9.h_fu2p9_jZcV6o9BYCc8SUGE73t0V82U90-suNQDFVo",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTA3NzcwLCJpYXQiOjE3NDE1MDQxNzAsImp0aSI6IjhiZTFiODQ2M2IwYTQxMzI5ZDUyZmFkOTdmNWIyN2ZmIiwidXNlcl9pZCI6M30.9QMUiCm-Yn-9N0p1MiFi-m9bX2GBlaMCcrtlBgsvle4"
+}

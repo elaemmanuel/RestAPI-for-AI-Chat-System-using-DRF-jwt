@@ -1,0 +1,18 @@
+#Input  (POST request)
+##body
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU4MTc2MCwiaWF0IjoxNzQxNDk1MzYwLCJqdGkiOiIxMzczZjkwYzIxMDQ0ZGJhYWY1YTQ5NTk4YjZjYzRlNyIsInVzZXJfaWQiOjJ9.EG0729NoZ4_roUkauRVLcHpID5b9vQkA2VxidAGajUc"
+
+}
+
+##Auth
+Authorization Type: Bearer Token
+
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTA3ODgxLCJpYXQiOjE3NDE1MDQyODEsImp0aSI6IjYwMDQ0OTBjYzljNDQzYWJhM2UzNzc5NjM4ZGI3NjgxIiwidXNlcl9pZCI6M30.yx44QRP-GjhRN3Sc7qBqtj73DEdK8318BSEkGnCVKO0
+
+###NOTE token is your access token..
+
+#Output
+{
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTA4OTk4LCJpYXQiOjE3NDE0OTUzNjAsImp0aSI6ImFlMGI5NzgxOTU0YjQyNDdhMjE1OWFhM2Q3ZTQ3NTRiIiwidXNlcl9pZCI6Mn0.M60hqUFN6ySbvAmONR9b-pJ2mq2-fKVyuXEyCrJNfik"
+}
