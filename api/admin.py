@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import UserProfile, Chat
-from django.contrib.auth.models import User
+from .models import CustomUser, UserProfile, Chat
+from django.contrib.auth.admin import UserAdmin
 
 class UserProfileInline(admin.StackedInline):
     model = UserProfile
@@ -8,9 +8,8 @@ class UserProfileInline(admin.StackedInline):
     verbose_name_plural = 'Profiles'
     fk_name = 'user'
 
-class CustomUserAdmin(admin.ModelAdmin):
+class CustomUserAdmin(UserAdmin):
     inlines = (UserProfileInline,)
 
-admin.site.unregister(User)
-admin.site.register(User, CustomUserAdmin)
+admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(Chat)
