@@ -16,7 +16,7 @@ def send_code_to_api(user_query):
     try:
         # Initialize the ChatGroq model with specified parameters
         llm = ChatGroq(
-            model="mixtral-8x7b-32768", 
+            model="llama-3.3-70b-versatile", 
             temperature=0.0, 
             max_retries=2,
         )
