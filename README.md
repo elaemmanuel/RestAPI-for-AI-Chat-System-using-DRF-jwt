@@ -1,32 +1,65 @@
-Project Title:
-"Django REST APIs for AI Chat"
+# REST API for AI Chat System using DRF & JWT
 
-Description:
-This API manages user accounts with registration and login, facilitates token-based chat interactions with an external AI, and provides token balance checks.
+**Recruiter Hook:**  
+RESTful API for an AI chat system built with Django REST Framework and JWT authentication. Demonstrates secure API development, token‑based auth, and backend design skills relevant to modern web services.
 
-Installation Instructions: These commands are for windows!! 
-* Create a virtual environment (python -m venv .venv)
-* Activate the virtual environment (.venv\scripts\activate)
-* Install Django, Django rest framework and simplejwt (pip install django djangorestframework djangorestframework_simplejwt)
-* install langchain_groq (pip install langchain_groq) ## langchain open source framework with model provider groq for AI  chat bot integration
-* Install dotenv (pip install python-dotenv) # To load api key from .env
-* Create a requirements.txt file with all the dependencies ( pip freeze > requirements.txt) 
+## Overview
+This project implements a RESTful backend API for an AI‑powered chat system using **Django REST Framework (DRF)** and **JWT authentication**. The API supports secure user registration and login, token‑based authentication, and endpoints for sending and receiving chat messages powered by a conversational AI.
 
-Usage guidelines: These commands are for windows!! 
-* Run migrations to save to the database (python manage.py makemigrations) and (python manage.py migrate)
-* Create a super user to access django admin panel (python manage.py createsuperuser) 
-* Get a groq api key for free form https://groq.com/ 
-* Create a .env in your root directory and input your key ( export GROQ_API_KEY="your_api_key" )
-* Run the development server (python manage.py runserver)
-* Download an API tool. (i used Apidog desktop).
-* Initiate a new request.
-* To register a new user, paste the url path your_localhost/api/regiser(for me, http://127.0.0.1:8000/api/register/)
-* ##"Check Output Result" Folder to see input format...
-* To login a user, paste the url path your_localhost/api/regiser(for me http://127.0.0.1:8000/api/login/) 
-##"Check Output Result " Folder to see input format...
-* To send queries to the model, paste the url path your_localhost/api/regiser(for me http://127.0.0.1:8000/api/chat/)
-* ##"Check Output Result" Folder to see input format...
-* To get token balance, paste the url path your_localhost/api/regiser(for me http://127.0.0.1:8000/api/balance/) 
-##"Check Output Result" Folder to see input format...
+## Features
+- **User Authentication:** Secure registration and login using JWT tokens.  
+- **Protected API Endpoints:** Authenticated routes for chat interactions.  
+- **AI Chat Interaction:** Backend support for sending messages to an AI service (mock or real) and returning responses.  
+- **Extensible Backend:** Easily add new endpoints or integrate with different AI providers.
+
+## Tech Stack
+- **Backend Framework:** Python, Django, Django REST Framework  
+- **Authentication:** JSON Web Tokens (JWT)  
+- **Database:** SQLite (development)  
+- **API Tools:** DRF Serializers and ViewSets  
+- **Testing:** Postman / API clients (optional)
+
+## How to Run Locally
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/elaemmanuel/RestAPI-for-AI-Chat-System-using-DRF-jwt.git
+```
+
+2. **Navigate into the project directory**
+   
+
+3. **Create and activate a virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+4. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+5. **Start the Django server**
+```bash
+python manage.py runserver
+```
+
+6. **Access the API**
+- Base API URL: http://127.0.0.1:8000/api/
+- Register a user: POST https://127.0.0.1:8000/api/auth/register/
+- Login to get JWT tokens: POST https://127.0.0.1:8000/api/auth/login/
+
+7. ## Usage Example
+- Register a user using the register endpoint.
+- Login to get an access token.
+- Use the token to call protected chat endpoints.
+- The backend processes and returns AI responses.
+
+## Future Improvements
+- Add database entity models for persistent chat history.
+- Provide API documentation (Swagger / Redoc).
+
+
 
 
